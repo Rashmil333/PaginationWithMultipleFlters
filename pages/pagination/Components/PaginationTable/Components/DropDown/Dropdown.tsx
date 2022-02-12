@@ -34,7 +34,7 @@ function DropDown(props: Props): JSX.Element {
       </div>
 
       <div className={`${styles.dropdownmapContainer} ${showmap && styles[STATES.Active] || styles[STATES.Inactive]}`} onMouseLeave={() => setShowMap(false)}>
-        {data.map((item: number, index: number) => {
+        {data?.map((item: number, index: number) => {
           return (
             <div key={index} onClick={() => {
               handle(item);
