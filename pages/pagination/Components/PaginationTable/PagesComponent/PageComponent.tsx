@@ -1,7 +1,7 @@
 import styles from './pagecomponent.module.scss';
 import snorlax from '../../../../../static/snorlax.png';
 import zubat from '../../../../../static/zubat.png';
-import Image from 'next/Image';
+import Image from 'next/image';
 
 interface Props {
   totalPages: number,

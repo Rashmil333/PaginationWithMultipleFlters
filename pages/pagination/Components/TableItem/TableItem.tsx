@@ -1,6 +1,6 @@
 import styles from './tableitem.module.scss';
 import { PokemonDataInterface } from '../../../../modules/Pagination';
-import Image from 'next/Image';
+import Image from 'next/image';
 
 
 function TableItem(props: PokemonDataInterface): JSX.Element {
