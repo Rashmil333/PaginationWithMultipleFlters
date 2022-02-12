@@ -109,7 +109,7 @@ function PaginationTable(props: Props): JSX.Element {
       <Header />
       <div className={styles.tableContainer}>
         {filteredData.map((item: PokemonDataInterface, index: number) => {
-          if (index >= currentPage && index <= (currentPage + 10)) {
+          if (index >= currentPage * 10 && index < (currentPage * 10) + 10) {
             return (
               // eslint-disable-next-line react/jsx-key
               <TableItem
