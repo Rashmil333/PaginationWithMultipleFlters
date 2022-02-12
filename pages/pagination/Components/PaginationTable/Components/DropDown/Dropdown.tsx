@@ -1,7 +1,7 @@
 import styles from './dropdown.module.scss';
 import pokeball from '../../../../../../static/pokeball.png';
 import pikachu from '../../../../../../static/pikachu.png';
-import Image from 'next/Image'
+import Image from 'next/image'
 import { useEffect, useState } from 'react';
 
 interface Props {
