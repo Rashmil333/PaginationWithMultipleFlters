@@ -15,7 +15,7 @@ function TableItem(props: PokemonDataInterface): JSX.Element {
   function GraphCMSImageLoader({ src, width }) {
     const relativeSrc = (src) => src.split("/").pop();
 
-    return `https://media.graphcms.com/resize=width:${width}/${relativeSrc(src)}`;
+    return `https://raw.githubusercontent.com/resize=width:${width}/${relativeSrc(src)}`;
   }
   return (
     <div className={`${styles.itemWrapper} ${index % 2 === 0 && styles.evenColor || styles.oddColor}`}>
@@ -23,7 +23,10 @@ function TableItem(props: PokemonDataInterface): JSX.Element {
       <p>{base_experience} </p>
       <p>{height}</p>
       <p>{weight}</p>
-      <Image loader={GraphCMSImageLoader} src={image} alt='pokemonpic' className={styles.pic} width={20} height={20} />
+      <div>
+        <Image src={image} alt='pokemonpic' className={styles.pic} width={100} height={100} />
+      </div>
+
     </div>
   )
 }
