@@ -1,0 +1,53 @@
+.dropdown{
+  .labelDiv{
+    display: flex;
+    cursor: pointer;
+    .label{
+      // background-color: aliceblue;
+      width: fit-content;
+      padding: .625rem;
+      border-radius: 18px;
+      color:white;
+      font-size: 1.25rem;
+    } 
+    .pokeball{
+      display: block;
+      margin-top: 1.625rem;
+    
+    }
+  }
+  .dropdownmapContainer{
+    display: none;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: .625rem;
+    margin-top: -1.875rem;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    transform: translateY(10px);
+    transition: 0.5s;
+    .mapdiv{
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed red;
+      .pikachu{
+        margin-top: .625rem;
+        &.active{
+          display:block;
+        }
+        &.inactive{
+          display: none;
+        }
+      }
+    }:hover{
+      background-color: antiquewhite;
+    }
+    &.active{
+      display: grid;
+      width:13rem;
+    }
+  }
+ 
+}

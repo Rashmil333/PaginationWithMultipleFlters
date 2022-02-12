@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap');
+
+
+.tableWrapper{
+  background-image: url('https://external-preview.redd.it/EG7bjGp5PDvZ8golrKh3m84n-A9khC5jDE-hqqoVfvA.png?format=pjpg&auto=webp&s=3d441c3774c597cd0136e9634303ef86c0d8677a')  ;
+  width: 100vw;
+  height: 100vh;
+  .header{
+    color:red;
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.375rem;
+    margin-left: 3rem;
+    padding-top: 2rem;
+  }
+  .filterandinputWrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-left: 1.25rem;
+    .inputWrapper{
+      background-color: aliceblue;
+      opacity: 0.8;
+      width: fit-content;
+      height: fit-content;
+      border-radius: 18px;
+      padding:.5rem .5rem   .625rem 1.25rem;
+      .label{
+        margin-bottom: 0;
+        font-size: .875rem;
+        font-family: 'Prompt', sans-serif;
+        margin-top: 0;
+      }
+      .active{
+        display: flex;
+      }
+      .inactive{
+        display: none;
+      }
+      .input{
+        border: none;
+        background: transparent;
+        outline: none;
+        font-family: 'Prompt', sans-serif;
+        color:red;
+        font-weight: bold;
+      }
+      ::placeholder{
+        font-size: .875rem;
+        font-family: 'Prompt', sans-serif;
+      }
+    }
+  }
+
+  .tableContainer{
+    height: 63vh;
+    overflow-y: scroll;
+    margin: 1.875rem 1.25rem .625rem 1.25rem;
+  }
+  .tableContainer::-webkit-scrollbar {
+    display: none;
+}
+}

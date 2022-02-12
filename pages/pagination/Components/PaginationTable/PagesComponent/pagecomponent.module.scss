@@ -1,0 +1,13 @@
+.pageDiv{
+  display: flex;
+  // background-color: red;
+  .page{
+    padding: .625rem;
+    background-color: black;
+    color: white;
+    margin-right: .625rem;
+  }
+  .pokeball{
+    margin-left: .625rem;
+  }
+}

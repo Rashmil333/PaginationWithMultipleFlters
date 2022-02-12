@@ -1,0 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap');
+
+.headerContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  font-family: 'Prompt', sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  color:coral;
+  margin: 0rem 1.875rem;
+}
