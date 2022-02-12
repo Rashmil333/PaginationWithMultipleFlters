@@ -5,6 +5,7 @@ import TableItem from '../TableItem/TableItem';
 import Header from './Components/Header/Header';
 import Filter from './Components/Filter/Filter';
 import PageComponent from './PagesComponent/PageComponent';
+import bgImage from '../../../../static/pokemonbackgroundimage.jpg';
 
 
 
@@ -86,7 +87,7 @@ function PaginationTable(props: Props): JSX.Element {
   }, [setCurrentPage])
 
   return (
-    <div className={styles.tableWrapper}>
+    <div className={styles.tableWrapper} style={{ backgroundImage: `url(${bgImage.src})` }}>
       <h1 className={styles.header}>{header}</h1>
       <div className={styles.filterandinputWrapper}>
         <div className={styles.inputWrapper}>
